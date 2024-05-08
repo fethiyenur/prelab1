@@ -39,8 +39,8 @@
             this.lblKelimeUzunlugu = new System.Windows.Forms.Label();
             this.lblyanlıstahminler = new System.Windows.Forms.Label();
             this.lblPuan = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblTahminEdilenKelime = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.class11 = new OOP2_Exp6.Class1();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAdamAsmaca)).BeginInit();
             this.SuspendLayout();
@@ -132,9 +132,9 @@
             this.lblKelimeUzunlugu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKelimeUzunlugu.Location = new System.Drawing.Point(89, 294);
             this.lblKelimeUzunlugu.Name = "lblKelimeUzunlugu";
-            this.lblKelimeUzunlugu.Size = new System.Drawing.Size(47, 15);
+            this.lblKelimeUzunlugu.Size = new System.Drawing.Size(106, 15);
             this.lblKelimeUzunlugu.TabIndex = 10;
-            this.lblKelimeUzunlugu.Text = "label2";
+            this.lblKelimeUzunlugu.Text = "kelimeuzunluğu";
             // 
             // lblyanlıstahminler
             // 
@@ -142,9 +142,9 @@
             this.lblyanlıstahminler.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblyanlıstahminler.Location = new System.Drawing.Point(89, 335);
             this.lblyanlıstahminler.Name = "lblyanlıstahminler";
-            this.lblyanlıstahminler.Size = new System.Drawing.Size(47, 15);
+            this.lblyanlıstahminler.Size = new System.Drawing.Size(109, 15);
             this.lblyanlıstahminler.TabIndex = 11;
-            this.lblyanlıstahminler.Text = "label2";
+            this.lblyanlıstahminler.Text = "yanlış tahminler";
             // 
             // lblPuan
             // 
@@ -152,26 +152,35 @@
             this.lblPuan.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPuan.Location = new System.Drawing.Point(88, 374);
             this.lblPuan.Name = "lblPuan";
-            this.lblPuan.Size = new System.Drawing.Size(65, 22);
+            this.lblPuan.Size = new System.Drawing.Size(55, 22);
             this.lblPuan.TabIndex = 12;
-            this.lblPuan.Text = "label2";
+            this.lblPuan.Text = "puan";
             this.lblPuan.Click += new System.EventHandler(this.lblPuan_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(136, 168);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(101, 20);
-            this.textBox2.TabIndex = 13;
             // 
             // lblTahminEdilenKelime
             // 
             this.lblTahminEdilenKelime.AutoSize = true;
-            this.lblTahminEdilenKelime.Location = new System.Drawing.Point(260, 383);
+            this.lblTahminEdilenKelime.BackColor = System.Drawing.Color.Gray;
+            this.lblTahminEdilenKelime.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTahminEdilenKelime.Location = new System.Drawing.Point(206, 142);
             this.lblTahminEdilenKelime.Name = "lblTahminEdilenKelime";
-            this.lblTahminEdilenKelime.Size = new System.Drawing.Size(35, 13);
+            this.lblTahminEdilenKelime.Size = new System.Drawing.Size(93, 32);
             this.lblTahminEdilenKelime.TabIndex = 14;
             this.lblTahminEdilenKelime.Text = "label2";
+            this.lblTahminEdilenKelime.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTahminEdilenKelime.Click += new System.EventHandler(this.lblTahminEdilenKelime_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(328, 212);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 33);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "İPUCU?";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // class11
             // 
@@ -184,8 +193,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(914, 563);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTahminEdilenKelime);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblPuan);
             this.Controls.Add(this.lblyanlıstahminler);
             this.Controls.Add(this.lblKelimeUzunlugu);
@@ -220,7 +229,7 @@
         private System.Windows.Forms.Label lblKelimeUzunlugu;
         private System.Windows.Forms.Label lblyanlıstahminler;
         private System.Windows.Forms.Label lblPuan;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblTahminEdilenKelime;
+        private System.Windows.Forms.Button button1;
     }
 }

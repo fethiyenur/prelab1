@@ -12,7 +12,8 @@ namespace OOP2_Exp6
 {
     public partial class Formoyun : Form
     {
-
+        
+      
         private string[] kelimeListesi =
             {
             "elma",
@@ -49,6 +50,7 @@ namespace OOP2_Exp6
         Properties.Resources.man_07,
         Properties.Resources.man_08,
         Properties.Resources.man_09,
+        Properties.Resources.man_10__1_,
     };
 
            
@@ -58,11 +60,14 @@ namespace OOP2_Exp6
         public Formoyun()
         {
             InitializeComponent();
+            
         }
 
         private void Formoyun_Load(object sender, EventArgs e)
         {
             NewGame();
+
+            
         }
 
         private void NewGame()
@@ -80,8 +85,10 @@ namespace OOP2_Exp6
             lblTahminEdilenKelime.Text = tahminEdilenKelime;
             lblPuan.Text = "Puan: " + puan;
             lblKelimeUzunlugu.Text = "Kelime Uzunluğu: " + gizliKelime.Length;
+            lblyanlıstahminler.Text = "Yanlıs Tahminler :";
             yanlisTahminler.Clear();
             pictureBoxAdamAsmaca.Image = Properties.Resources.man_01;
+            pictureBoxAdamAsmaca.SizeMode = PictureBoxSizeMode.StretchImage;
             this.BackColor = SystemColors.Control;
         }
 
@@ -101,6 +108,7 @@ namespace OOP2_Exp6
             {
                 yanlisTahminler.Add(harf);
                 puan -= 10;
+                lblyanlıstahminler.Text += harf.ToString() + ",";
                 lblPuan.Text = "Puan: " + puan;
                 adamıas();
             }
@@ -127,6 +135,8 @@ namespace OOP2_Exp6
                 if (!yanlisTahminler.Contains(tahminHarfi) && !tahminEdilenKelime.Contains(tahminHarfi.ToString()))
                 {
                     TahminEt(tahminHarfi);
+                    
+                    
                 }
                 else
                 {
@@ -153,7 +163,7 @@ namespace OOP2_Exp6
         {
             Image[] imageHangman =
        {
-        Properties.Resources.man_01,
+        
         Properties.Resources.man_02,
         Properties.Resources.man_03,
         Properties.Resources.man_04,
@@ -161,7 +171,9 @@ namespace OOP2_Exp6
         Properties.Resources.man_06,
         Properties.Resources.man_07,
         Properties.Resources.man_08,
-        Properties.Resources.man_09
+        Properties.Resources.man_09,
+        Properties.Resources.man_10__1_,
+
     };
 
             int resimIndex = (10 - puan / 10) - 1; // Resim dizisindeki index'i belirle
@@ -178,5 +190,33 @@ namespace OOP2_Exp6
         {
 
         }
+
+        private void lblTahminEdilenKelime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public Button ıpucubutton
+        {
+            get { return button1; }
+        }
+        private void OyunAyarları_IpucuGorunurlukDegisti(object sender, bool gorunurluk)
+        {
+            //ıpucuButton.Visible = gorunurluk;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Evet seçildiğinde
+           
+            // Rastgele bir doğru harf seç
+            Random random = new Random();
+            int index = random.Next(gizliKelime.Length);
+            char ipucuHarf = gizliKelime[index];
+
+            // Seçilen harfi kullanıcıya göster
+            MessageBox.Show("İpucu: Gizli kelimenin içinde '" + ipucuHarf + "' harfi var.", "İpucu", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
-}
+    }
+
