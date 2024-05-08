@@ -1,0 +1,11 @@
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\bin\Debug\OOP2_Exp6.exe.config
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\bin\Debug\OOP2_Exp6.exe
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\bin\Debug\OOP2_Exp6.pdb
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.csproj.AssemblyReference.cache
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.Form1.resources
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.Properties.Resources.resources
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.csproj.GenerateResource.cache
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.csproj.CoreCompileInputs.cache
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.exe
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.pdb
+C:\Users\beyza\source\repos\OOP2_Exp6\OOP2_Exp6\obj\Debug\OOP2_Exp6.Formoyun.resources
